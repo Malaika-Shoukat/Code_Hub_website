@@ -1,0 +1,231 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+}
+.nav-link:hover{
+color: blue;
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* GRADIENT BUTTON */
+.gradient-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  padding: 0.7rem 1rem;
+}
+
+.title_code {
+  color: black;
+}
+.title_hub {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: url("/assets/home_page_images/Virtual_classroom.jpeg")
+    center/cover no-repeat;
+  height: auto;
+  min-height: 550px;
+  padding: 120px 0 200px;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 20, 50, 0.55);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Feature Box Container */
+.hero-features {
+  position: absolute;
+  bottom: -290px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-radius: 20px;
+}
+
+/* Default Text Scaling */
+.hero-section h1 {
+  font-size: clamp(1.8rem, 4vw, 3.4rem);
+  line-height: 1.2;
+}
+
+.hero-section p {
+  font-size: clamp(0.9rem, 1.3vw, 1.2rem);
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 100px 0 220px;
+  }
+
+  .hero-features {
+    position: relative;
+    bottom: 0;
+    transform: none;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .hero-section h1 {
+    text-align: center;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0 200px;
+  }
+
+  .hero-section .container {
+    text-align: center;
+  }
+}
+
+/* Very Small Screens (320px – 480px) */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 50px 0 180px;
+  }
+
+  .hero-features {
+    padding: 20px 10px;
+  }
+
+  .hero-features .col-6 {
+    width: 50%;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Super Small Screens (Below 300px) */
+@media (max-width: 300px) {
+  .hero-features {
+    display: none;
+  }
+
+  .hero-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-section p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ABOUT SECTION */
+#about {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+#about h2 {
+  line-height: 1.4;
+}
+
+#about img {
+  object-fit: cover;
+}
+
+/* STATS */
+.stats-box {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+.stats-section {
+  background: rgba(0, 20, 50, 0.8);
+}
+
+.stats-section .rounded {
+  transition: all 0.3s ease;
+}
+
+.stats-section .rounded:hover {
+  transform: translateY(-5px);
+}
+
+/* COURSES SECTION */
+.course_1 h6,
+.course_2 h6,
+.course_3 h6,
+.course_4 h6 {
+  color: black;
+}
+.card {
+  border: 1px solid black;
+}
+
+#courses img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.enroll_btn {
+  border-radius: 8px;
+  border: none;
+  color: white;
+  transition: 0.3s;
+}
+.enroll_btn:hover {
+  color: white;
+}
+/* FOOTER */
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #764ba2;
+}
+
+/* FOOTER SECTION */
+.footer {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .bi {
+  transition: color 0.3s;
+}

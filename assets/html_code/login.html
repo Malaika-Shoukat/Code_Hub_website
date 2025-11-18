@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login-CodeHub</title>
+  <!-- Custom csss -->
+  <link rel="stylesheet" href="/assets/css_code/login.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- cdnjs link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container">
+      <div class="navbar-brand d-flex align-items-center gap-2">
+        <h1 class="brand-title"><span class="title_code">Code</span><span class="title_hub">Hub</span></h1>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center fw-bold text-black">
+          <li class="nav-item"><a class="nav-link" href="/assets/html_code/home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/html_code/courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/html_code/resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/html_code/quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="/assets/html_code/contact.html">Contact</a></li>
+
+          <!-- Login & Signup buttons -->
+          <li class="nav-item ms-2">
+            <a class="btn gradient-btn  text-white btn-sm px-4 py-2" href="/assets/html_code/login.html">Login </a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="btn gradient-btn btn-sm px-4 py-2 text-white" href="/assets/html_code/sign_up.html">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LOGIN FORM -->
+  <div class="background_image d-flex justify-content-center align-items-center flex-grow-1 pt-5">
+    <div class="login-card text-start">
+      <h2><span class="gradient-text">Login</span></h2>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label fw-semibold">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="remember" />
+            <label class="form-check-label small" for="remember">Remember me</label>
+          </div>
+          <a href="#" class="text-link small gradient-text">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn gradient-btn w-100 fw-semibold mt-2 text-white">Login</button>
+        <p class="text-center mt-3 small text-dark">
+          Don't have an account?
+          <a href="/assets/html_code/sign_up.html" class="text-link fw-semibold gradient-text">Sign Up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <footer class="footer bg-dark text-light pt-5 pb-4 ">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6">
+          <h3 class="fw-bold mb-3"><span class="text-white">Code</span><span class="gradient-text">Hub</span></h3>
+          <p class="small text-secondary">
+            CodeHub is a digital learning platform dedicated to empowering students and professionals.
+            Learn trending skills in Web Development, AI, Data Science, and more with expert instructors.
+          </p>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="gradient-text fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/assets/html_code/home.html" class="footer-link">Home</a></li>
+            <li><a href="/assets/html_code/courses.html" class="footer-link">courses</a></li>
+            <li><a href="/assets/html_code/resourses.html" class="footer-link">Resourses</a></li>
+            <li><a href="/assets/html_code/quiz.html" class="footer-link">Quiz</a></li>
+            <li><a href="/assets/html_code/contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="gradient-text fw-bold mb-3 ">Popular Courses</h5>
+          <ul class="list-unstyled ">
+            <li><a href="#" class="footer-link">Web Development</a></li>
+            <li><a href="#" class="footer-link">Data Science</a></li>
+            <li><a href="#" class="footer-link">AI & ML</a></li>
+            <li><a href="#" class="footer-link">Cyber Security</a></li>
+            <li><a href="#" class="footer-link">Database Systems</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="gradient-text fw-bold mb-3">Contact Us</h5>
+          <p class="small">Gilgit Baltistan, Pakistan <br>
+            +92 123 654 7898 <br>
+            info@codehub.com</p>
+
+          <a href="/assets/html_code/sign_up.html" class="btn gradient-btn text-white btn-sm mt-3 px-4">Join Now</a>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="text-center small text-secondary">
+        <p>© 2025 <span class="gradient-text fw-bold">CodeHub</span>. Designed by <span class="gradient-text">Malaika
+            Shoukat</span></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
