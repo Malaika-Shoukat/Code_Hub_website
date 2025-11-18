@@ -1,0 +1,104 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* GRADIENT BUTTON */
+.gradient-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  padding: 0.7rem 1rem;
+}
+
+.title_code {
+  color: black;
+}
+.title_hub {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*  Login form */
+.background_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("/assets/home_page_images/Virtual_classroom.jpeg") center/cover
+      no-repeat;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+.login-card h2 {
+  color: orange;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-control:focus {
+  border-color: orange;
+  box-shadow: none;
+}
+.btn-warning,
+.btn-orange {
+  background-color: orange;
+  border-color: orange;
+  color: #fff;
+}
+.btn-warning:hover,
+.btn-orange:hover {
+  background-color: #e67e00;
+}
+.text-link {
+  color: orange;
+  text-decoration: none;
+}
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER SECTION */
+.footer {
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer .bi {
+  transition: color 0.3s;
+}
