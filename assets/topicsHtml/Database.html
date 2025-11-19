@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 5: Databases and SQL</title>
+  <link rel="stylesheet" href="Database.css">
+
+</head>
+<body>
+ 
+  <header class="header rounded-bottom">
+    <h1>Chapter 5: Databases and SQL</h1>
+    <p>Learn how data is stored, managed, and accessed using databases and SQL.</p>
+  </header>
+
+  <main>
+    <h2> What is a Database?</h2>
+    <p>
+      A <strong>Database</strong> is an organized collection of data that can be easily accessed, managed, and updated.
+      It stores information in a structured format, typically in tables made up of rows and columns.
+    </p>
+
+    <div class="highlight-box">
+      <strong>Definition:</strong>  
+      A database is a structured system for storing, retrieving, and managing data efficiently.
+    </div>
+
+    <h3> Why Use Databases?</h3>
+    <ul>
+      <li>Store large amounts of data securely.</li>
+      <li>Reduce duplication and ensure consistency.</li>
+      <li>Quickly search, sort, and filter data.</li>
+      <li>Support multiple users accessing the same data simultaneously.</li>
+    </ul>
+
+    <h3> Components of a Database</h3>
+    <ul>
+      <li><b>Table:</b> Collection of related data organized in rows and columns.</li>
+      <li><b>Record (Row):</b> Represents one data item (e.g., one student’s details).</li>
+      <li><b>Field (Column):</b> A single attribute (e.g., Name, Age, Grade).</li>
+      <li><b>Primary Key:</b> A unique identifier for each record in a table.</li>
+    </ul>
+
+    <div class="diagram">
+      Example Table: <b>Students</b>
+      <div class="table-wrapper solid" role="region" aria-label="Students Table">
+    <table>
+      <caption>Students</caption>
+      <thead>
+        <tr>
+          <th>StudentID</th>
+          <th>Name</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Ali</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Sana</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Rafi</td>
+          <td>A+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+    </div>
+
+    <h2> What is SQL?</h2>
+    <p>
+      <strong>SQL (Structured Query Language)</strong> is a standard programming language used to manage and manipulate databases.
+      It allows users to <b>create, read, update, and delete</b> data in a relational database.
+    </p>
+
+    <div class="highlight-box">
+      <b>Fun Fact:</b> SQL is pronounced as “Sequel” and was first developed by IBM in the 1970s.
+    </div>
+
+    <h3> Common SQL Commands</h3>
+    <table>
+      <tr>
+        <th>Command</th>
+        <th>Purpose</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><code>CREATE TABLE</code></td>
+        <td>Creates a new table in the database.</td>
+        <td><code>CREATE TABLE Students (ID INT, Name TEXT);</code></td>
+      </tr>
+      <tr>
+        <td><code>INSERT INTO</code></td>
+        <td>Adds new data into a table.</td>
+        <td><code>INSERT INTO Students VALUES (101, 'Ali');</code></td>
+      </tr>
+      <tr>
+        <td><code>SELECT</code></td>
+        <td>Retrieves data from one or more tables.</td>
+        <td><code>SELECT * FROM Students;</code></td>
+      </tr>
+      <tr>
+        <td><code>UPDATE</code></td>
+        <td>Modifies existing records.</td>
+        <td><code>UPDATE Students SET Grade='A' WHERE ID=101;</code></td>
+      </tr>
+      <tr>
+        <td><code>DELETE</code></td>
+        <td>Deletes records from a table.</td>
+        <td><code>DELETE FROM Students WHERE ID=102;</code></td>
+      </tr>
+    </table>
+
+    <h3> Example SQL Program</h3>
+    <pre>
+-- Create a table
+CREATE TABLE Students (
+  ID INT PRIMARY KEY,
+  Name TEXT,
+  Grade TEXT
+);
+
+-- Insert records
+INSERT INTO Students VALUES (101, 'Ali', 'A');
+INSERT INTO Students VALUES (102, 'Sana', 'B');
+
+-- View records
+SELECT * FROM Students;
+
+-- Update a grade
+UPDATE Students SET Grade = 'A+' WHERE ID = 102;
+    </pre>
+
+    <h3> Benefits of Using SQL Databases</h3>
+    <ul>
+      <li>Data consistency and integrity.</li>
+      <li>Security and controlled access.</li>
+      <li>Support for large-scale data handling.</li>
+      <li>Widely used across industries and web applications.</li>
+    </ul>
+
+    <div class="highlight-box">
+       <strong>Tip:</strong> SQL is a must-learn skill for anyone interested in data science, AI, or software development!
+    </div>
+
+    <div style="margin-top:30px;">
+      <a href="chapter4.html" class="btn">← Previous Chapter</a>
+      <a href="topics.html" class="btn">Back to Topics</a>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2025 Computer Science Learning Portal | Chapter 5: Databases and SQL
+  </footer>
+
+</body>
+</html>

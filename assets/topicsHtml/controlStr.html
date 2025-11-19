@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter: Control Structures</title>
+  <link rel="stylesheet" href="">
+
+
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Control Structures</h1>
+    <p>Understand how decisions and repetitions are handled in programming.</p>
+  </header>
+
+  <main>
+
+    <h2>What Are Control Structures?</h2>
+    <p>
+      <strong>Control Structures</strong> define the flow of a program — how decisions are made and how actions are repeated.
+    </p>
+
+    <div class="highlight-box">
+      <strong>Definition:</strong>  
+      Control structures allow a program to execute instructions conditionally or repeatedly.
+    </div>
+
+    <h2>Types of Control Structures</h2>
+    <ol>
+      <li><strong>Selection / Decision Making (if, else-if, else)</strong></li>
+      <li><strong>Looping / Repetition (for, while, do-while)</strong></li>
+      <li><strong>Jump Statements (break, continue)</strong></li>
+    </ol>
+
+    <h2>1. Selection Statements</h2>
+
+    <h3>IF Statement</h3>
+    <p>Executes a block of code only if a condition is true.</p>
+
+    <pre>
+if (age > 18) {
+   print("You are an adult");
+}
+    </pre>
+
+    <h3>IF-ELSE Statement</h3>
+    <pre>
+if (marks >= 50) {
+   print("Pass");
+} else {
+   print("Fail");
+}
+    </pre>
+
+    <h3>ELSE IF Ladder</h3>
+    <pre>
+if (grade >= 90) {
+   print("A");
+} else if (grade >= 80) {
+   print("B");
+} else {
+   print("C");
+}
+    </pre>
+
+
+    <h2>2. Looping Statements</h2>
+
+    <h3>FOR Loop</h3>
+    <p>Used when you know how many times to repeat.</p>
+
+    <pre>
+for (i = 1; i <= 5; i++) {
+   print(i);
+}
+    </pre>
+
+    <h3>WHILE Loop</h3>
+    <p>Runs as long as the condition is true.</p>
+
+    <pre>
+while (count <= 3) {
+   print("Hello");
+   count++;
+}
+    </pre>
+
+    <h3>DO-WHILE Loop</h3>
+    <p>Runs at least once before checking the condition.</p>
+
+    <pre>
+do {
+   print("Welcome");
+   x++;
+} while (x < 5);
+    </pre>
+
+
+    <h2>3. Jump Statements</h2>
+
+    <h3>BREAK</h3>
+    <p>Stops the loop immediately.</p>
+
+    <pre>
+for (i = 1; i <= 10; i++) {
+   if (i == 5) break;
+}
+    </pre>
+
+    <h3>CONTINUE</h3>
+    <p>Skips the current iteration.</p>
+
+    <pre>
+for (i = 1; i <= 5; i++) {
+   if (i == 3) continue;
+   print(i);
+}
+    </pre>
+
+
+    <div class="highlight-box">
+      <strong>Tip:</strong>  
+      Mastering control structures is essential because all logic in programming depends on conditions and loops.
+    </div>
+
+
+    <div style="margin-top:30px;">
+      <a href="Variables.html" class="btn">← Previous Chapter</a>
+      <a href="topics.html" class="btn">Back to Topics</a>
+      <a href="Database.html" class="btn">Next Chapter</a>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2025 Computer Science Learning Portal | Control Structures
+  </footer>
+
+</body>
+</html>
