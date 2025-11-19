@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Computer Science MCQ Quiz</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <div class="navbar-brand d-flex align-items-center gap-2">
+                <h1 class="brand-title"><span class="title_code">Code</span><span class="title_hub">Hub</span></h1>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-center fw-bold text-black">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                    <!-- Login & Signup buttons -->
+                    <li class="nav-item ms-2">
+                        <a class="btn gradient-btn  text-white btn-sm px-4 py-2" href="login.html">Login </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn gradient-btn btn-sm px-4 py-2 text-white" href="sign_up.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="quiz-container shadow-lg p-4">
+  <h1><i class="fa-solid fa-book-open"></i> Computer Science MCQ Quiz</h1>
+
+  <!-- Topic Select -->
+  <div class="mb-3">
+    <select id="topic-select" class="form-select fs-5">
+      <option value="intro">Introduction to Computer Science</option>
+      <option value="algo">Algorithms & Flowcharts</option>
+      <option value="pf">Fundamentals of programming</option>
+      <option value="ds">Data Structures</option>
+      <option value="db">Database & SQL</option>
+      <option value="ai">AI Basics</option>
+    </select>
+  </div>
+
+  <!-- Timer -->
+  <div id="timer">⏱ Time Left: <span id="time">60</span>s</div>
+  <div id="progress"></div>
+
+  <!-- Quiz Section -->
+  <div id="quiz"></div>
+
+  <!-- Navigation Controls -->
+  <div class="controls d-flex justify-content-between mt-4">
+    <button id="prev" class="btn btn-primary" onclick="prevQuestion()">⬅ Previous</button>
+    <button id="next" class="btn btn-primary" onclick="nextQuestion()">Next ➡</button>
+  </div>
+
+  <!-- Submit -->
+  <button id="submit" class="btn mt-4" onclick="submitQuiz()">Submit Quiz</button>
+
+  <!-- Result Section -->
+  <div id="result" class="mt-4 p-3 rounded-3 text-center fw-bold" style="display:none;"></div>
+</div>
+
+<!-- FOOTER SECTION -->
+    <footer class="footer bg-dark text-light pt-5 pb-4 mt-5">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold mb-3"><span class="text-white">Code</span><span class="gradient-text">Hub</span></h3>
+                    <p class="small text-secondary">
+                           CodeHub is a digital learning platform dedicated to empowering students and professionals.
+                        Learn trending skills in Web Development, AI, Data Science, and more with expert instructors.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="gradient-text fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">Courses</a></li>
+                        <li><a href="#" class="footer-link">Resourses</a></li>
+                        <li><a href="#" class="footer-link">Quiz</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+              <div class="col-lg-3 col-md-6">
+                    <h5 class="gradient-text fw-bold mb-3 ">Popular Courses</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="#" class="footer-link">Web Development</a></li>
+                        <li><a href="#" class="footer-link">Data Science</a></li>
+                        <li><a href="#" class="footer-link">AI & ML</a></li>
+                        <li><a href="#" class="footer-link">Cyber Security</a></li>
+                        <li><a href="#" class="footer-link">Database Systems</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="gradient-text fw-bold mb-3">Contact Us</h5>
+                    <p class="small">Gilgit Baltistan, Pakistan <br>
+                    +92 123 654 7898 <br>
+                    info@codehub.com</p>
+                    <a href="sign_up.html" class="btn gradient-btn text-white btn-sm mt-3 px-4">Join Now</a>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+            <div class="text-center small text-secondary">
+             <p>   © 2025 <span class="gradient-text fw-bold">CodeHub</span>. Designed by <span class="gradient-text"> Malaika Shoukat </span></p>
+            </div>
+
+        </div>
+    </footer>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* ---------------------------- QUESTIONS DATA ---------------------------- */
+const questions = {
+  intro: [
+    { q: "Computer is an:", a:"Electronic Device", b:"Mechanical Device", c:"Chemical Device", d:"None", correct:"a" },
+    { q: "CPU stands for:", a:"Central Processing Unit", b:"Computer Personal Unit", c:"Control Process Utility", d:"None", correct:"a" },
+    { q: "Input Device Example:", a:"Monitor", b:"Printer", c:"Keyboard", d:"Speaker", correct:"c" },
+    { q: "Which of the following stores data permanently?", a:"RAM", b:"Hard Disk", c:"Cache", d:"Register", correct:"b" },
+    { q: "Which is an Output Device?", a:"Mouse", b:"Keyboard", c:"Monitor", d:"Scanner", correct:"c" },
+    { q: "Main function of computer is:", a:"Processing data", b:"Painting", c:"Cooking", d:"None", correct:"a" },
+    { q: "The brain of computer is:", a:"Monitor", b:"CPU", c:"Mouse", d:"Keyboard", correct:"b" },
+    { q: "Which device displays information?", a:"Monitor", b:"Keyboard", c:"Scanner", d:"CPU", correct:"a" },
+    { q: "Which memory is temporary?", a:"RAM", b:"ROM", c:"Hard Disk", d:"DVD", correct:"a" },
+    { q: "Who is known as the father of computers?", a:"Charles Babbage", b:"Alan Turing", c:"Bill Gates", d:"Steve Jobs", correct:"a" }
+  ],
+  algo: [
+    { q:"Algorithm is:", a:"A recipe to solve problems", b:"Computer hardware", c:"Programming language", d:"None", correct:"a"},
+    { q:"Flowchart uses:", a:"Shapes & Arrows", b:"Only text", c:"Tables", d:"Voice notes", correct:"a"},
+    { q: "Flowchart start/end symbols are drawn using:", a:"Rectangle", b:"Oval", c:"Diamond", d:"Parallelogram", correct:"b" },
+    { q: "Diamond shape in a flowchart represents:", a:"Input / Output", b:"Processing", c:"Decision", d:"Start", correct:"c" },
+    { q: "Algorithm should be:", a:"Unclear", b:"Finite and clear", c:"Endless", d:"Confusing", correct:"b" },
+    { q: "In flowchart, parallelogram is used for:", a:"Input/Output", b:"Decision", c:"Process", d:"Loop", correct:"a" },
+    { q: "Step-by-step problem-solving method is called:", a:"Algorithm", b:"Program", c:"Flowchart", d:"Compiler", correct:"a" },
+    { q: "Flowcharts help in:", a:"Understanding logic", b:"Improving hardware", c:"Writing poetry", d:"Designing chips", correct:"a" },
+    { q: "Which symbol shows process in flowchart?", a:"Rectangle", b:"Oval", c:"Diamond", d:"Parallelogram", correct:"a" },
+    { q: "Before writing code, first step is:", a:"Create Algorithm", b:"Write program", c:"Run code", d:"Debug", correct:"a" }
+  ],
+  pf: [
+    { q:"Programming is:", a:"Giving instructions to computer", b:"Drawing", c:"Gaming", d:"None", correct:"a"},
+    { q:"C++ is:", a:"Markup Language", b:"Programming Language", c:"Database", d:"Browser", correct:"b"},
+    { q: "Which symbol is used to terminate a statement in C/C++?", a:":", b:",", c:";", d:".", correct:"c" },
+    { q: "Which one is NOT a programming language?", a:"Python", b:"Java", c:"HTML", d:"C++", correct:"c" },
+    { q: "IDE stands for:", a:"Integrated Development Environment", b:"Internal Data Engine", c:"Interactive Design Editor", d:"None", correct:"a" },
+    { q: "Which keyword is used to declare variables in C++?", a:"var", b:"int", c:"dim", d:"set", correct:"b" },
+    { q: "Compiler converts:", a:"Source code to machine code", b:"Machine code to text", c:"Binary to decimal", d:"None", correct:"a" },
+    { q: "Debugging means:", a:"Finding and fixing errors", b:"Deleting files", c:"Installing software", d:"Formatting disk", correct:"a" },
+    { q: "Which loop executes at least once?", a:"for", b:"while", c:"do-while", d:"None", correct:"c" },
+    { q: "Which of these is a conditional statement?", a:"if-else", b:"class", c:"import", d:"define", correct:"a" }
+  ],
+  ds: [
+    { q:"Stack uses:", a:"LIFO", b:"FIFO", c:"Random", d:"None", correct:"a"},
+    { q:"Queue uses:", a:"LIFO", b:"FIFO", c:"None", d:"Both", correct:"b"},
+    { q:"Binary Tree is:", a:"One dimensional", b:"Two dimensional", c:"Hierarchical", d:"None", correct:"c"},
+    { q:"Which data structure is used for recursion?", a:"Queue", b:"Array", c:"Stack", d:"List", correct:"c"},
+    { q:"Linked list elements are:", a:"Stored sequentially", b:"Stored randomly with links", c:"Sorted automatically", d:"None", correct:"b"},
+    { q:"Which data structure is used in BFS?", a:"Stack", b:"Queue", c:"Tree", d:"Graph", correct:"b"},
+    { q:"In a queue, insertion happens at:", a:"Rear", b:"Front", c:"Middle", d:"Top", correct:"a"},
+    { q:"Binary search works only on:", a:"Sorted data", b:"Unsorted data", c:"Images", d:"None", correct:"a"},
+    { q:"Which data structure allows insertion and deletion at both ends?", a:"Deque", b:"Stack", c:"Queue", d:"List", correct:"a"},
+    { q:"Which data structure is used in DFS?", a:"Queue", b:"Stack", c:"Tree", d:"Heap", correct:"b"}
+  ],
+
+  db: [
+    { q:"SQL stands for:", a:"Simple Query Language", b:"Structured Query Language", c:"System Question Language", d:"None", correct:"b"},
+    { q:"Primary Key is:", a:"Unique Identifier", b:"Duplicate value", c:"Null value", d:"None", correct:"a"},
+    { q: "Which SQL command is used to retrieve data?", a:"INSERT", b:"UPDATE", c:"SELECT", d:"DELETE", correct:"c" },
+    { q: "Which is used to avoid duplicate records?", a:"DISTINCT", b:"WHERE", c:"ORDER BY", d:"GROUP BY", correct:"a" },
+    { q: "Which command is used to delete records?", a:"REMOVE", b:"DELETE", c:"DROP", d:"ERASE", correct:"b" },
+    { q: "In SQL, WHERE clause is used for:", a:"Sorting", b:"Filtering rows", c:"Deleting table", d:"Joining tables", correct:"b" },
+    { q: "Which command creates a new table?", a:"NEW TABLE", b:"MAKE TABLE", c:"CREATE TABLE", d:"INSERT TABLE", correct:"c" },
+    { q: "A foreign key is:", a:"Used to link tables", b:"Used for encryption", c:"Used for login", d:"None", correct:"a" },
+    { q: "Which command updates data in table?", a:"UPDATE", b:"ALTER", c:"SELECT", d:"JOIN", correct:"a" },
+    { q: "Which function counts rows in SQL?", a:"SUM()", b:"COUNT()", c:"AVG()", d:"TOTAL()", correct:"b" }
+  ],
+
+  ai: [
+    { q:"AI means:", a:"Artificial Intelligence", b:"Animal Interaction", c:"Auto Input", d:"None", correct:"a"},
+    { q:"Which is an AI application?", a:"Google Assistant", b:"Fan", c:"Bulb", d:"Chair", correct:"a"},
+    { q: "AI mainly tries to make machines:", a:"Fast", b:"Intelligent", c:"Large", d:"Expensive", correct:"b" },
+    { q: "Which field is closely related to AI?", a:"Psychology", b:"Biology", c:"Astrology", d:"Chemistry", correct:"a" },
+    { q:"Which language is most used in AI?", a:"Python", b:"C", c:"HTML", d:"PHP", correct:"a"},
+    { q:"Which area uses AI the most?", a:"Healthcare", b:"Farming", c:"Painting", d:"Cooking", correct:"a"},
+    { q:"Machine learning is a subset of:", a:"Artificial Intelligence", b:"Robotics", c:"Data Entry", d:"Networking", correct:"a"},
+    { q:"AI robots can:", a:"Perform human-like tasks", b:"Only play games", c:"Only speak", d:"None", correct:"a"},
+    { q:"Which algorithm is used in Machine Learning?", a:"Neural Networks", b:"Quick Sort", c:"Binary Search", d:"Bubble Sort", correct:"a"},
+    { q:"Which AI technique mimics the human brain?", a:"Neural Networks", b:"Decision Trees", c:"Genetic Algorithms", d:"Stack", correct:"a"}
+  ]
+};
+
+/* ---------------------------- QUIZ LOGIC ---------------------------- */
+let index = 0;
+let currentTopic = "intro";
+let score = 0;
+let selectedAnswers = [];
+let timeLeft = 60;
+let timer;
+
+const quizDiv = document.getElementById("quiz");
+const resultDiv = document.getElementById("result");
+const timerSpan = document.getElementById("time");
+const progressDiv = document.getElementById("progress");
+
+function loadQuestion() {
+  const topic = questions[currentTopic];
+  const q = topic[index];
+  progressDiv.innerText = `Question ${index + 1} of ${topic.length}`;
+
+  quizDiv.innerHTML = `
+    <div class="question">${index + 1}. ${q.q}</div>
+    <div class="options">
+      ${["a","b","c","d"].map(opt => `
+        <label>
+          <input type="radio" name="opt" value="${opt}" ${selectedAnswers[index] === opt ? 'checked' : ''}>
+          ${q[opt]}
+        </label>
+      `).join("")}
+    </div>
+  `;
+}
+
+function nextQuestion() {
+  saveAnswer();
+  if (index < questions[currentTopic].length - 1) {
+    index++;
+    loadQuestion();
+  }
+}
+
+function prevQuestion() {
+  saveAnswer();
+  if (index > 0) {
+    index--;
+    loadQuestion();
+  }
+}
+
+function saveAnswer() {
+  const selected = document.querySelector('input[name="opt"]:checked');
+  if (selected) selectedAnswers[index] = selected.value;
+}
+
+function submitQuiz() {
+  saveAnswer();
+  const topic = questions[currentTopic];
+  score = 0;
+  topic.forEach((q, i) => {
+    if (selectedAnswers[i] === q.correct) score++;
+  });
+
+  const percentage = (score / topic.length) * 100;
+  let gradeClass = "";
+  let gradeText = "";
+
+  if (percentage >= 80) {
+    gradeClass = " text-black";
+    gradeText = "Excellent!";
+  } else if (percentage >= 50) {
+    gradeClass = " text-black";
+    gradeText = "Good!";
+  } else {
+    gradeClass = " text-black";
+    gradeText = "Try Again!";
+  }
+
+  resultDiv.style.display = "block";
+  resultDiv.innerHTML = `
+    <div class="p-3 ${gradeClass} rounded-3">
+      ✅ <strong>Score:</strong> ${score}/${topic.length}<br>
+      <strong>Percentage:</strong> ${percentage.toFixed(2)}%<br>
+      <strong>Grade:</strong> ${gradeText}
+    </div>
+  `;
+
+  clearInterval(timer);
+}
+
+document.getElementById("topic-select").onchange = function() {
+  currentTopic = this.value;
+  restartQuiz();
+};
+
+function restartQuiz() {
+  index = 0;
+  score = 0;
+  selectedAnswers = [];
+  timeLeft = 60;
+  resultDiv.style.display = "none";
+  startTimer();
+  loadQuestion();
+}
+
+function startTimer() {
+  clearInterval(timer);
+  timer = setInterval(() => {
+    timeLeft--;
+    timerSpan.innerText = timeLeft;
+    if (timeLeft <= 0) submitQuiz();
+  }, 1000);
+}
+
+startTimer();
+loadQuestion();
+</script>
+
+</body>
+</html>
