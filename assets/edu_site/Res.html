@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHub - Computer Science Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <div class="navbar-brand d-flex align-items-center gap-2">
+                <h1 class="brand-title"><span class="title_code">Code</span><span class="title_hub">Hub</span></h1>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-center fw-bold text-black">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                    <!-- Login & Signup buttons -->
+                    <li class="nav-item ms-2 py-2">
+                        <a class="btn gradient-btn  text-white btn-sm px-4 py-2" href="login.html">Login </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn gradient-btn btn-sm px-4 py-2 text-white" href="sign_up.html">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Master Computer Science</h1>
+            <p class="lead mb-4">Comprehensive learning platform for students aged 12-22</p>
+            <a href="#topics" class="btn btn-black btn-lg text-white">Start Learning</a>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="py-5">
+        <div class="container">
+           
+            <div class="row g-4 text-white">
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card ">
+                        <h4>💻 Programming Fundamentals</h4>
+                        <span class="difficulty beginner">Beginner</span>
+                        <ul class="subtopics">
+                            <li>Variables & Data Types</li>
+                            <li>Control Structures</li>
+                            <li>Functions & Methods</li>
+                            <li>Object-Oriented Programming</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card">
+                        <h4>🌐 Web Development</h4>
+                        <span class="difficulty intermediate">Intermediate</span>
+                        <ul class="subtopics">
+                            <li>HTML & CSS</li>
+                            <li>JavaScript Basics</li>
+                            <li>Responsive Design</li>
+                            <li>Web Frameworks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card">
+                        <h4>🗄️ Data Structures</h4>
+                        <span class="difficulty intermediate">Intermediate</span>
+                        <ul class="subtopics">
+                            <li>Arrays & Lists</li>
+                            <li>Stacks & Queues</li>
+                            <li>Trees & Graphs</li>
+                            <li>Hash Tables</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card">
+                        <h4>⚙️ Algorithms</h4>
+                        <span class="difficulty advanced">Advanced</span>
+                        <ul class="subtopics">
+                            <li>Sorting Algorithms</li>
+                            <li>Searching Techniques</li>
+                            <li>Dynamic Programming</li>
+                            <li>Graph Algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card">
+                        <h4>🗃️ Database Systems</h4>
+                        <span class="difficulty intermediate">Intermediate</span>
+                        <ul class="subtopics">
+                            <li>SQL Basics</li>
+                            <li>Database Design</li>
+                            <li>Normalization</li>
+                            <li>NoSQL Databases</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card">
+                        <h4>🤖 Artificial Intelligence</h4>
+                        <span class="difficulty advanced">Advanced</span>
+                        <ul class="subtopics">
+                            <li>Machine Learning Basics</li>
+                            <li>Neural Networks</li>
+                            <li>Deep Learning</li>
+                            <li>AI Applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-2 bg-light">
+        <div class="container">
+           
+            
+            <div class="filter-bar mb-4 pt-2">
+                <span class="filter-btn bg-white text-black "> 📚 Learning Resources</span>
+                
+            </div>
+
+            <div class="row g-4 ">
+                <div class="col-lg-6">
+                    <div class="resource-card " style=" background-color :linear-gradient(135deg, #667eea 0%, #764ba2 100%);" >
+                        <div class="resource-icon">📄</div>
+                        <div class="resource-content">
+                            <h5>Python Programming Guide</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Notes</span>
+                                <span class="badge bg-success">Beginner</span>
+                            </div>
+                            <p class="small ">Complete guide covering Python basics, syntax, and practical examples.</p>
+                            <p class="text-muted small text-white ">📅 Updated: Nov 10, 2025</p>
+                            <a href="https://www.google.com/search?q=python+programming+guide+tutorial" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary text-white">Open on Google</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="resource-card">
+                        <div class="resource-icon">🎯</div>
+                        <div class="resource-content">
+                            <h5>Data Structures Cheat Sheet</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Cheat Sheet</span>
+                                <span class="badge bg-white text-black ">Intermediate</span>
+                            </div>
+                            <p class="small">Quick reference for all major data structures with time complexities.</p>
+                            <p class="text-muted small">📅 Updated: Nov 8, 2025</p>
+                            <a href="https://www.google.com/search?q=data+structures+cheat+sheet" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary text-white">Open on Google</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="resource-card">
+                        <div class="resource-icon">🌐</div>
+                        <div class="resource-content">
+                            <h5>Web Development Essentials</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-primary">PDF</span>
+                                <span class="badge bg-success">Beginner</span>
+                            </div>
+                            <p class="small">Comprehensive HTML, CSS, and JavaScript tutorial with projects.</p>
+                            <p class="text-muted small">📅 Updated: Nov 5, 2025</p>
+                            <a href="https://www.google.com/search?q=web+development+essentials+html+css+javascript+pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary text-white">Open on Google</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="resource-card">
+                        <div class="resource-icon">🗃️</div>
+                        <div class="resource-content">
+                            <h5>SQL Query Reference</h5>
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Notes</span>
+                                <span class="badge bg-white text-black  ">Intermediate</span>
+                            </div>
+                            <p class="small">Complete SQL guide with examples and best practices.</p>
+                            <p class="text-muted small">📅 Updated: Nov 3, 2025</p>
+                            <a href="https://www.google.com/search?q=sql+query+reference" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary text-white">Open on Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+   
+
+    <!-- Footer -->
+   <div><!-- FOOTER SECTION -->
+    <footer class="footer bg-dark text-light pt-5 pb-4 mt-5">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold mb-3"><span class="text-white">Code</span><span class="gradient-text">Hub</span></h3>
+                    <p class="small text-secondary">
+                           CodeHub is a digital learning platform dedicated to empowering students and professionals.
+                        Learn trending skills in Web Development, AI, Data Science, and more with expert instructors.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="gradient-text fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">Courses</a></li>
+                        <li><a href="#" class="footer-link">Resourses</a></li>
+                        <li><a href="#" class="footer-link">Quiz</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+              <div class="col-lg-3 col-md-6">
+                    <h5 class="gradient-text fw-bold mb-3 ">Popular Courses</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="#" class="footer-link">Web Development</a></li>
+                        <li><a href="#" class="footer-link">Data Science</a></li>
+                        <li><a href="#" class="footer-link">AI & ML</a></li>
+                        <li><a href="#" class="footer-link">Cyber Security</a></li>
+                        <li><a href="#" class="footer-link">Database Systems</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="gradient-text fw-bold mb-3">Contact Us</h5>
+                    <p class="small">Gilgit Baltistan, Pakistan <br>
+                    +92 123 654 7898 <br>
+                    info@codehub.com</p>
+                    <a href="sign_up.html" class="btn gradient-btn text-white btn-sm mt-3 px-4">Join Now</a>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+            <div class="text-center small text-secondary">
+             <p>   © 2025 <span class="gradient-text fw-bold">CodeHub</span>. Designed by <span class="gradient-text"> Zeeshan Karim </span></p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
