@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Computer Science Topics</title>
+  <link rel="stylesheet" href="topics.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark rounded-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html" title="Home">
+        <i class="fas fa-house fa-lg me-2" aria-hidden="true"></i>
+        CS Topics
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item dropdown me-3">
+            <a class="nav-link dropdown-toggle" href="#" id="topicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="topicsDropdown">
+              <li><a class="dropdown-item" href="programming.html">Programming Fundamentals</a></li>
+              <li><a class="dropdown-item" href="data-structures.html">Data Structures</a></li>
+              <li><a class="dropdown-item" href="algorithms.html">Algorithms</a></li>
+              <li><a class="dropdown-item" href="database.html">Database Management</a></li>
+              <li><a class="dropdown-item" href="web.html">Web Development</a></li>
+              <li><a class="dropdown-item" href="os.html">Operating Systems</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <form class="d-flex" role="search" action="#" method="get">
+              <input class="form-control form-control-sm me-2" type="search" placeholder="Search chapters" aria-label="Search" name="q">
+              <button class="btn btn-sm" type="submit" style="background:var(--violet-primary); color:#fff;"><i class="fas fa-search"></i></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SIMPLE HEADER SECTION -->
+  <div class="header-section ">
+    <h1>Computer Science Topics</h1>
+    <p>Find foundational topics and enhance your programming skills with bite-sized chapters</p>
+  </div>
+
+  <!-- TOPICS GRID (centered cards) -->
+  <main class="container">
+    <div class="topic-list" role="list">
+      <div class="topic-col" role="listitem">
+        <div class="topic-card">
+          <div class="topic-top">
+            <div>Programming Fundamentals</div>
+            <small>3 chapters</small>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">1</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Introduction to Programming</div>
+            </div>
+            <a class="learn-btn" href="Programing.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">2</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Variables & Data Types</div>
+            </div>
+            <a class="learn-btn" href="Variables.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">3</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Control Structures</div>
+            </div>
+            <a class="learn-btn" href="controlStr.html">Learn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-col" role="listitem">
+        <div class="topic-card">
+          <div class="topic-top">
+            <div>Data Structures</div>
+            <small>3 chapters</small>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">1</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Introduction to Data Structures</div>
+            </div>
+            <a class="learn-btn" href="Datastr.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">2</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Linked Lists</div>
+            </div>
+            <a class="learn-btn" href="Datastr.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">3</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Stacks & Queues</div>
+            </div>
+            <a class="learn-btn" href="Datastr.html">Learn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-col" role="listitem">
+        <div class="topic-card">
+          <div class="topic-top">
+            <div>Algorithms</div>
+            <small>3 chapters</small>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">1</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Algorithm Analysis</div>
+            </div>
+            <a class="learn-btn" href="Algorithms.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">2</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Sorting Algorithms</div>
+            </div>
+            <a class="learn-btn" href="Algorithms.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">3</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Searching Algorithms</div>
+            </div>
+            <a class="learn-btn" href="Algorithms.html">Learn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-col" role="listitem">
+        <div class="topic-card">
+          <div class="topic-top">
+            <div>Database Management</div>
+            <small>3 chapters</small>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">1</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Introduction to Databases</div>
+            </div>
+            <a class="learn-btn" href="Database.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">2</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">SQL Fundamentals</div>
+            </div>
+            <a class="learn-btn" href="Database.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">3</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Database Design</div>
+            </div>
+            <a class="learn-btn" href="Database.html">Learn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-col" role="listitem">
+        <div class="topic-card">
+          <div class="topic-top">
+            <div>Web Development</div>
+            <small>3 chapters</small>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">1</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">HTML & CSS Basics</div>
+            </div>
+            <a class="learn-btn" href="webdev.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">2</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">JavaScript Fundamentals</div>
+            </div>
+            <a class="learn-btn" href="webdev.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">3</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Responsive Design</div>
+            </div>
+            <a class="learn-btn" href="webdev.html">Learn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-col" role="listitem">
+        <div class="topic-card">
+          <div class="topic-top">
+            <div>Operating Systems</div>
+            <small>3 chapters</small>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">1</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">OS Fundamentals</div>
+            </div>
+            <a class="learn-btn" href="operating.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">2</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Process Management</div>
+            </div>
+            <a class="learn-btn" href="process.html">Learn</a>
+          </div>
+          <div class="chapter-row">
+            <div class="chapter-number">3</div>
+            <div class="flex-grow-1">
+              <div class="chapter-title">Memory Management</div>
+            </div>
+            <a class="learn-btn" href="operating.html">Learn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <h3 class="fw-bold mb-3"><span class="text-white">Code</span><span class="gradient-text">Hub</span></h3>
+          <p class="small text-secondary">
+            CodeHub is a digital learning platform dedicated to empowering students and professionals. Learn trending skills in Web Development, AI, Data Science, and more with expert instructors.
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="gradient-text fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="#" class="footer-link">Courses</a></li>
+            <li><a href="#" class="footer-link">Resources</a></li>
+            <li><a href="#" class="footer-link">Quiz</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="gradient-text fw-bold mb-3">Popular Courses</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Web Development</a></li>
+            <li><a href="#" class="footer-link">Data Science</a></li>
+            <li><a href="#" class="footer-link">AI & ML</a></li>
+            <li><a href="#" class="footer-link">Cyber Security</a></li>
+            <li><a href="#" class="footer-link">Database Systems</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="gradient-text fw-bold mb-3">Contact Us</h5>
+          <p class="small">Gilgit Baltistan, Pakistan <br>
+            +92 123 654 7898 <br>
+            info@codehub.com
+          </p>
+          <a href="sign_up.html" class="btn gradient-btn text-white btn-sm mt-3 px-4">Join Now</a>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+      <div class="text-center small text-secondary">
+        <p>© 2025 <span class="gradient-text fw-bold">CodeHub</span>. Designed by <span class="gradient-text">KIU Coders</span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

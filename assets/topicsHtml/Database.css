@@ -1,0 +1,115 @@
+ body {
+      font-family: 'Calibri', Arial, sans-serif;
+      font-size: 30px;
+      background-color: #f4f8fb;
+      color: #0d0c11;
+      margin: 0;
+      padding: 0;
+    
+
+    }
+
+    header {
+      background-color:#5b21b6 ;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2, h3, h4 {
+      color: #5b21b6;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    ul, ol {
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .btn {
+      background-color: #5b21b6;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #5b21b6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .highlight-box {
+      background-color: #e9f2fc;
+      border-left: 5px solid #572bbe;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    code {
+      background-color: #f1f1f1;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      color: #572bbe;
+    }
+
+    pre {
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e9f2fc;
+    }
+
+    .diagram {
+      background: #f9fbfd;
+      border: 2px dashed #53228a;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      font-family: monospace;
+      margin: 20px 0;
+    }
